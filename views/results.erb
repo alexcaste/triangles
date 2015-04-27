@@ -1,11 +1,9 @@
-<h2>You made a the following type of triangle:</h2>
-
-<% if @results.tri_eq() == "Equilateral"%>
-    <h2>Equilateral </h2>
-<% elsif @results.tri_iso() == "Isosceles" %>
-    <h2>Isosceles </h2>
-<% elsif @results.tri_sca() == "Scalene" %>
-    <h2>Scalene </h2>
+<% if @input_tri.not_tri() %>
+    <h2>That is not a Triangle you fuck!</h2>
+<% elsif @input_tri.tri_eq() %>
+    <h2>Good job, you made an Equilateral triangle.  You're sexy.</h2>
+<% elsif @input_tri.tri_iso() %>
+    <h2>Good job, you made an Isosceles triangle.  Can I buy you a drink?</h2>
 <% else %>
-    <h2>Not a Triangle </h2>
+    <h2>Good job, you made a Scalene triangle. I'm very impressed.</h2>
 <% end %>

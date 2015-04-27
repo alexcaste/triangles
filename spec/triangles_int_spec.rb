@@ -10,7 +10,7 @@ describe('the triangle path' , {:type => :feature}) do
     fill_in('side2' , :with => '1')
     fill_in('side3' , :with => '1')
     click_button('Rock On')
-    expect(page).to have_content('Equilateral')
+    expect(page).to have_content("Equilateral")
     end
 
 end
