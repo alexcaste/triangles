@@ -1,0 +1,11 @@
+<h2>You made a the following type of triangle:</h2>
+
+<% if @results.tri_eq() == "Equilateral"%>
+    <h2>Equilateral </h2>
+<% elsif @results.tri_iso() == "Isosceles" %>
+    <h2>Isosceles </h2>
+<% elsif @results.tri_sca() == "Scalene" %>
+    <h2>Scalene </h2>
+<% else %>
+    <h2>Not a Triangle </h2>
+<% end %>
