@@ -6,8 +6,11 @@ class Triangle
         @side3 = side3
     end
 
-    define_method(:triangle_equal) do
+    define_method(:tri_eq) do
         @side1 == @side2 && @side1 == @side3
-            true
+    end
+
+    define_method(:tri_iso) do
+        @side1 == @side2 || @side1 == @side3 || @side2 == @side3
     end
 end
