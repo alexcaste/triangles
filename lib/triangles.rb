@@ -14,6 +14,7 @@ class Triangle
 
     define_method(:tri_eq) do
         @side1 == @side2 && @side1 == @side3
+            return "Equilateral"
     end
 
     define_method(:tri_iso) do
@@ -21,6 +22,7 @@ class Triangle
             return "Not a Triangle"
         else
             @side1 == @side2 || @side1 == @side3 || @side2 == @side3
+            return "Isosceles"
         end
     end
 
@@ -29,6 +31,7 @@ class Triangle
             return "Not a Triangle"
         else
             @side1 != @side2 && @side1 != @side3 && @side2 != @side3
+            return "Scalene"
         end
     end
 

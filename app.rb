@@ -1,12 +1,12 @@
-# require('sinatra')
-# require('sinatra/reloader')
-# require('./lib/traingles')
-# also_reload('lib/**/*.rb')
-#
-# get('/')
-#     erb(:index)
-# end
-#
-# get('/results')
-#     erb(:results)
-# end
+require('sinatra')
+require('sinatra/reloader')
+require('./lib/triangles')
+also_reload('lib/**/*.rb')
+
+get('/') do
+    erb(:index)
+end
+
+get('/results') do
+    erb(:results)
+end

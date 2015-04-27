@@ -7,7 +7,7 @@ describe(Triangle) do
         #it checks if all sides are equal
         it("returns true if side1, side2 & side3 are equal to each other") do
             triangle_test = Triangle.new(1, 1, 1)
-            expect(triangle_test.tri_eq()).to(eq(true))
+            expect(triangle_test.tri_eq()).to(eq("Equilateral"))
         end
     end
 
@@ -15,7 +15,7 @@ describe(Triangle) do
         #it check if only two sides are equal
         it("it returns true if only two sides are equal to each other") do
             triangle_test = Triangle.new(1, 1, 2)
-            expect(triangle_test.tri_iso()).to(eq(true))
+            expect(triangle_test.tri_iso()).to(eq("Isosceles"))
         end
     end
 
@@ -23,7 +23,7 @@ describe(Triangle) do
         #it checks if no sides are equal to the others
         it("it returns true if no sides are equal to any of the other sides") do
             triangle_test = Triangle.new(1, 2, 3)
-            expect(triangle_test.tri_sca()).to(eq(true))
+            expect(triangle_test.tri_sca()).to(eq("Scalene"))
         end
     end
 
