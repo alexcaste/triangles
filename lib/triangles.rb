@@ -7,6 +7,7 @@ class Triangle
     end
 
     define_method(:triangle_equal) do
-        
+        @side1 == @side2 && @side1 == @side3
+            true
     end
 end
